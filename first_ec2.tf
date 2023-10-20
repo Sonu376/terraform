@@ -1,6 +1,6 @@
-# provider "aws" {
-#   region     = "ap-south-1"
-# }
+provider "aws" {
+   region     = "ap-south-1"
+ }
 
 
 # Linux Server Provisioning
@@ -8,8 +8,6 @@
 resource "aws_instance" "myec2one" {
     ami           = "ami-0c42696027a8ede58"
     instance_type = var.instancetype
- 
-
 
 tags = {
 
@@ -19,11 +17,13 @@ tags = {
 
 }  
 
+/*
 # Windows Server Provisioning 
 
 resource "aws_instance" "winec2"{
   ami = "ami-0fb974a4772b174a5"
   instance_type = "t2.mico"
 }
+*/
  
 
